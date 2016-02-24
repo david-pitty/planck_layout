@@ -9,8 +9,8 @@ git clone https://github.com/jackhumbert/qmk_firmware.git ~/projects/planck/qmk_
 # symlink my layout
 ln -s ~/projects/planck/planck_layout/keyboard_custom_layout.c ~/projects/planck/qmk_firmware/keyboard/planck/keymaps/dpitty.c
 
-# Uncomment line 140 on Makefile
-# to enable NKRO support
+# enable NKRO support
+sed -i "s/^# NKRO_ENABLE/NKRO_ENABLE/g" ~/projects/qmk_firmware/keyboard/planck/Makefile
 
 # at this point the keyboard needs to be in boot mode
 cd ~/projects/planck/qmk_firmware/keyboard/planck
