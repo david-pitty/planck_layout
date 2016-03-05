@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   },
   [_PLOVER] = {
     {KC_RGHT, KC_UP,   KC_DOWN, KC_LEFT, KC_M,  KC_N,  KC_V,  KC_C,  KC_LGUI, KC_LALT, KC_NO, KC_BSPC},
-    {KC_ENT,  KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, DF(_QWERTY)},
+    {KC_ENT,  DF(_QWERTY),   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_LSFT},
     {KC_QUOT, KC_SCLN, KC_L,    KC_K,    KC_J,  KC_H,  KC_G,  KC_F,  KC_D,    KC_S,    KC_A,  KC_TAB},
     {KC_LBRC, KC_P,    KC_O,    KC_I,    KC_U,  KC_Y,  KC_T,  KC_R,  KC_E,    KC_W,    KC_Q,  KC_0}
   },
