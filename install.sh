@@ -1,5 +1,5 @@
 # install dependencies
-sudo apt-get install -y git dfu-programmer build-essential gcc-avr binutils-avr gdb-avr avr-libc avrdude lsusb
+sudo apt-get install -y git dfu-programmer build-essential gcc-avr binutils-avr gdb-avr avr-libc avrdude
 
 # clone repos
 mkdir -p ~/projects/planck
