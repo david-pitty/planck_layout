@@ -6,6 +6,10 @@ mkdir -p ~/projects/planck
 git clone https://github.com/david-pitty/planck_layout.git ~/projects/planck/planck_layout
 git clone https://github.com/jackhumbert/qmk_firmware.git ~/projects/planck/qmk_firmware
 
+cd ~/projects/planck/qmk_firmware
+# NKRO support working at this commit
+git reset --hard bdb6dce
+
 # symlink my layout
 ln -s ~/projects/planck/planck_layout/keyboard_custom_layout.c ~/projects/planck/qmk_firmware/keyboard/planck/keymaps/dpitty.c
 
