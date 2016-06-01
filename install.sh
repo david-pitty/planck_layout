@@ -7,7 +7,7 @@ git clone https://github.com/david-pitty/planck_layout.git ~/projects/planck/pla
 git clone https://github.com/jackhumbert/qmk_firmware.git ~/projects/planck/qmk_firmware
 
 cd ~/projects/planck/qmk_firmware
-# NKRO support working at this commit
+# NKRO support working at this commit and ubuntu14 only
 git reset --hard bdb6dce
 
 # symlink my layout
