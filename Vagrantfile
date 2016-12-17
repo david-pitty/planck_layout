@@ -43,13 +43,20 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
+  config.vm.provider "virtualbox" do |vb|
+	vb.customize ["modifyvm", :id, "--usb", "on"]
+	vb.customize ["modifyvm", :id, "--usbehci", "on"]
+	vb.customize ["usbfilter", "add", "0",
+	  "--target", :id,
+	  "--name", "This is the identifier",
+	  "--manufacturer", "SuYin",
+	  "--product", "Laptop_Integrated_Webcam_HD"]
   #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
+    vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
   #   vb.memory = "1024"
-  # end
+  end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
