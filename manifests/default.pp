@@ -28,7 +28,9 @@ file { 'link my layout':
   target => '/vagrant/keyboard_custom_layout.c',
 }
 
-exec { 'ensure NKRO is enabled':
-  cwd     => "${path_to_repo}/keyboard/planck",
-  command => 'sed -i "s/^# NKRO_ENABLE/NKRO_ENABLE/g" Makefile',
+file_line { 'ensure NKRO is enabled':
+  ensure => present,
+  path   => "${path_to_repo}/keyboard/planck/Makefile",
+  line   => 'NKRO_ENABLE = yes',
+  match  => '^#\ NKRO_ENABLE',
 }
