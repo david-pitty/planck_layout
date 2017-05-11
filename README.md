@@ -32,3 +32,6 @@ sudo make KEYMAP=dpitty dfu
 ## Requirements
 Vagrant requires VirtualBox with: Oracle VM VirtualBox Extension Pack
 
+## Notes
+See Key Code description here:
+https://github.com/qmk/qmk_firmware/blob/master/doc/keycode.txt
