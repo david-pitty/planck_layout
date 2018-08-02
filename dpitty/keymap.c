@@ -25,13 +25,12 @@ enum planck_layers {
   _LOWER,
   _RAISE,
   _CUSTOM,
-  _PLOVER,
-  _ADJUST
+  _ADJUST,
+  _PLOVER
 };
 
 enum planck_keycodes {
-  /*QWERTY = SAFE_RANGE,*/
-  DVORAK,
+  DVORAK = SAFE_RANGE,
   PLOVER,
   BACKLIT,
   EXT_PLV
@@ -137,8 +136,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_CUSTOM] = LAYOUT_planck_grid(
     KC_PSCR,   _______, _______, _______, _______, _______,      _______,      _______, _______, _______, _______, S(KC_DELETE),
     KC_F1,     KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,        KC_F7,        KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-    PLOVER,    _______, DVORAK,  _______, _______, _______,      _______,      _______, KC_VOLD, KC_VOLU, KC_MUTE, _______,
-    KC_INSERT, _______, _______, _______, _______, S(KC_INSERT), S(KC_INSERT), KC_BTN1, KC_HOME, KC_PGDN, KC_PGUP, KC_END
+    PLOVER,    RESET, _______,  _______,  _______, _______,      _______,      _______, _______, _______, _______, _______,
+    KC_INSERT, _______, _______, _______, _______, S(KC_INSERT), S(KC_INSERT), _______, _______, _______, _______, _______
 )
 
 
