@@ -9,3 +9,6 @@ Press `RAISE` and `LOWER` keys + secord key from top row
 2. Create symlink. Example: `ln -s ~/projects/planck_layout/dpitty ~/projects/qmk_firmware/keyboards/planck/keymaps/dpitty`
 3. Enter Boot Mode on keyboard with RESET key on layout (see section above)
 4. From root of qmk_firmware repo run: `make planck/rev3:dpitty:dfu`
+
+## Notes:
+Keycodes are available here: https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
